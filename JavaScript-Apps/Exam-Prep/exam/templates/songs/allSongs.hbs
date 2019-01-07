@@ -1,0 +1,19 @@
+{{> header}}
+
+<div class="background-spotify">
+    <div class="song-container">
+        <h1>All Songs</h1>
+        <a href="#/create">
+            <button type="button" class="btn-lg btn-block new-song-btn">Add a new song</button>
+        </a>
+        {{#each songs}}
+            {{> song}}
+        {{else}}
+        <div class="song">
+            <p>No songs available at the moment!</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+{{> footer}}

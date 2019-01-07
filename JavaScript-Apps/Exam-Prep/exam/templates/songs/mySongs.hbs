@@ -1,0 +1,15 @@
+{{> header}}
+<div class="background-spotify">
+    <div class="song-container">
+        <h1>My Songs</h1>
+        {{#each songs}}
+            {{> song}}
+        {{else}}
+            <div class="song">
+                <p>No songs available at the moment!</p>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+{{> footer}}
