@@ -1,0 +1,13 @@
+button,
+.button {
+    display: inline-block;
+    width: 7rem;
+    padding: 0.7rem 1rem;
+    background: #454545;
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+}

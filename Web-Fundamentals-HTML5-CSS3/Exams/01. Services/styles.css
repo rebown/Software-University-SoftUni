@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    font-family: 'Open Sans',sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.page {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.page h1:after {
+    display: block;
+    content: '';
+    width: 6.5rem;
+    height: 0.2rem;
+    background: rgb(23, 224, 100);
+
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.box {
+    flex: 0 0 31%;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.box header h3 {
+    color: white;
+}
+
+.box:nth-child(odd) > header {
+    background: rgb(24, 23, 23);
+}
+
+.box:nth-child(even) > header {
+    background: rgb(23, 224, 100);
+}
+
+.box > p:not(:last-child) {
+    vertical-align: middle;
+    border-bottom: 1px dotted grey;
+}
+
+.box > p:first-of-type {
+    background: rgb(238, 238, 238);
+    font-size: 1.5rem;
+}
+
+.box > p:nth-child(3) {
+    color: rgb(179, 174, 174);
+    font-size: 0.7rem;
+}
+
+.button {
+    display: block;
+    width: 7rem;
+    padding: 0.6rem 0.3rem;
+    background: rgb(23, 224, 100);
+    color: white;
+    border-radius: 2px;
+    margin: 0 auto;
+    text-decoration: none;
+}

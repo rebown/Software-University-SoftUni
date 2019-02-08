@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    font: 16px/1.5 'Open Sans',sans-serif;
+}
+
+body {
+    padding: 5rem;
+    background: #EEE;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+    margin: 0;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 65rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.3rem 1rem 0 rgba(0, 0, 0, 0.5)
+}
+
+section .cover {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    flex: 1 1 42%;
+    background: linear-gradient(0deg, rgba(2, 2, 2, 0.9),
+    rgba(8, 8, 8, 0.7)),
+    url('images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    padding: 2.5rem;
+}
+
+section .cover header,
+section .cover div {
+    flex: 1;
+}
+
+section .cover header p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+section .cover div:first-of-type {
+    text-align: center;
+}
+
+section .cover div:first-of-type h2 {
+    font-size: 2em;
+    font-weight: 100;
+    padding-bottom: 0.5rem;
+}
+
+section .cover div:first-of-type p {
+    font-size: 1.5em;
+    letter-spacing: 0.6;
+    font-weight: 0;
+}
+
+section form {
+    flex: 1 1 40%;
+    background: white;
+    margin: 0;
+    padding: 3rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form label {
+    display: block;
+    color: rgb(202, 202, 202);
+    padding: 0.7rem 0;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    border: none;
+    outline: none;
+    margin-bottom: 0.7rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(182, 181, 181);
+    color: rgb(194, 193, 193);
+}
+
+form p {
+    padding-top: 3rem;
+}
+
+form p a {
+    padding-left: 1rem;
+    color: grey;
+}
+
+form input[type="button"] {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 0.8rem 2.5rem;
+    background: #000;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    font-weight: 550;
+    font-size: 1rem
+}
