@@ -1,0 +1,55 @@
+/*TODO:*/
+
+@media screen and (max-width: 768px) {
+
+    #main {
+        display: block;
+    }
+
+    aside, main {
+        width: auto;
+    }
+
+    aside img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+    #main {
+        display: block;
+    }
+
+    aside, main {
+        width: auto;
+    }
+
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    aside img {
+        max-width: 18rem;
+        height: 18rem;
+        flex: 0 0 45%;
+        border-radius: 50%;
+        padding-top: 2rem;
+    }
+
+    aside > * {
+        flex: 1 1 100%;
+    }
+
+    aside #personal-info {
+        flex: 0 0 30%;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
