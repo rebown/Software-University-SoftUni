@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import url('reset.css');
+@import url('typography.css');
+
+body {
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    background-image: url('../images/bg-01.jpg');
+    background-color: rgba(133, 22, 243, 0.7);
+}
+
+body:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom:0;
+    background-color: rgba(132, 106, 221, 0.9);
+    z-index: -1;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+section .card,
+section .form {
+    flex: 1 0 50%;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        align-items: flex-start;
+    }
+
+    section .card {
+        display: none;
+    }
+}
+
+section .card {
+    background-image: url('../images/img-01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section .form {
+    padding: 2rem 4rem 2rem 2rem;
+}
+
+.form input,
+textarea {
+    width: 100%;
+}
+
+.form h3 {
+    margin: 1rem 0 2.5rem 0;
+    font-weight: 700;
+}
+
+form p.field {
+    position: relative;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+form .field .input {
+    display: flex;
+    align-items: center;
+}
+
+form .input .actions {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #E6E6E6;
+    border-radius: 1.5rem;
+
+}
+
+form .input input,
+form .input textarea {
+    flex: 1 0 70%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 0.75rem;
+    border-radius: 1.5rem;
+    background: #E6E6E6;
+    order: 2;
+    z-index: 3;
+}
+
+form .input input[type="submit"] {
+    color: white;
+    background: #846ADD;
+    cursor: pointer;
+}
+
+form .input input[type="submit"]:hover {
+    background: #333333;
+}
+
+form .input textarea {
+    padding-left: 2rem;
+}
+
+form .input input:focus + .actions + i {
+    color: purple;
+    padding-left: 1.3rem;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+form .input i {
+    font-size: 0.8em;
+    order: 1;
+    z-index: 2;
+    padding-left: 2rem;
+    color: #757587;
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+@import url('reset.css');
+@import url('typography.css');
+@import url('layout.css');
+
+/* COMMON */
+
+body .site-header {
+    background: #FAFAFA;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body li {
+    list-style-type: none;
+}
+
+
+/* MAIN NAVIGATION */
+
+.navigation {
+    display: flex;
+}
+
+.navigation li a {
+    padding: 0 1rem;
+    color: grey;
+}
+
+.navigation:nth-child(2) li a {
+    border-right: 1px solid rgb(201, 201, 201);
+
+}
+
+/* SITE BANNER */
+
+.site-banner .content-box {
+    position: relative;
+    height: 21rem;
+}
+
+.site-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 21rem;
+    z-index: -1;
+}
+
+.site-banner img:after {
+    display: block;
+    content: '';
+    margin: 1rem;
+}
+
+.site-banner .content-box {
+    color: white;
+    text-align: center;
+}
+
+.site-banner .content-box h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+.site-banner .content-box p {
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.site-banner .content-box p.message {
+    padding-top: 2rem;
+}
+
+/* SECTION HOW IT WORKS */
+
+section.how-it-works {
+    text-align: center;
+    color: grey;
+}
+
+section.how-it-works > p {
+    font-size: 1.5em;
+    padding: 2rem 2rem 0 2rem;
+}
+
+section.how-it-works .wrapper {
+    align-items: baseline;
+}
+
+.wrapper .box {
+    flex: 0 0 30%;
+}
+
+.box > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > header > span {
+    display: inline-block;
+}
+
+.box > header > .num {
+    font-size: 3em;
+    padding: 0 2rem;
+}
+
+.box > header > span:nth-child(1),
+.box > header > span:nth-child(3) {
+    height: 2px;
+    width: 3rem;
+    background: grey;
+}
+
+/* SECTION GALLERY */
+
+section.gallery {
+    background: #EDEDED;
+    padding: 3rem 0;
+}
+
+section.gallery .wrapper {
+    justify-content: space-evenly;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: black;
+    color: grey;
+    text-align: center;
+}
+
+.site-footer .terms {
+    padding: 2rem;
+}
+
+.site-footer .terms span {
+    padding: 0 0.5rem;
+}
+
+.site-footer .terms span:not(:last-child) {
+    display: inline-block;
+    border-right: 1px solid grey;
+}
+
+.site-footer .wrapper {
+    justify-content: flex-start;
+}
+
+.site-footer .tags {
+    display: flex;
+    flex: 0 0 35%;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.site-footer .tags li {
+    padding-bottom: 0.4rem;
+    line-height: 1.1;
+    width: 5rem;
+}
+
+.site-footer .tags li a {
+    color: grey;
+}
+
+.site-footer .branding {
+    flex: 0 0 15%;
+}
+
+.site-footer .branding .dots span {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.site-footer .branding .dots span:nth-child(2) {
+    background: white;
+}
+
+.site-footer .sign-up {
+    padding-left: 2rem;
+    flex: 0 0 25%;
+}
+
+.sign-up > form {
+    text-align: left;
+}
+
+.sign-up > form > input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.sign-up > form > input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #FA5B3C;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
