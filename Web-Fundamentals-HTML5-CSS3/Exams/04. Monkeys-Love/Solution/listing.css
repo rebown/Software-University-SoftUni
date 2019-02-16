@@ -1,0 +1,52 @@
+.listing .items {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60rem;
+    margin: 3rem auto;
+}
+
+
+.items .item {
+    flex: 0 0 20%;
+    text-align: center;
+}
+
+.item i {
+    display: inline-block;
+    color: #F05F40;
+    font-size: 4em;
+}
+
+.item .kind {
+    color: rgb(41, 39, 39);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.item .text {
+    color: grey;
+    font-size: 0.85em;
+}
+
+/* MONKEY LISTING */
+
+.listing {
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4rem;
+    border-top: 3px solid #F05F40;
+    border-bottom: 3px solid #F05F40;
+}
+
+.list img {
+    display: block;
+    max-width: 22rem;
+    max-height: 14rem;
+    margin: 0 2rem;
+    border-left: 3px solid #F05F40;
+    border-right: 3px solid #F05F40;
+}

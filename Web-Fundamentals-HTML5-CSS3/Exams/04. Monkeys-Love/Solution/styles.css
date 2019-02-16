@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('typography.css');
+@import url('buttons.css');
+@import url('listing.css');
+
+
+/* HEADER */
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header nav li {
+    display: block;
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+header nav a {
+    padding: 0.5rem 1rem;
+    color: #F05F40;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* IMAGE CONTAINER */
+
+.image-container,
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 60vh;
+}
+
+.image-container img {
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+}
+
+.image-container .content,
+.text-container .content {
+    max-width: 40rem;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.content h3 {
+    padding-bottom: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.content h3:after,
+.listing > h3:after {
+    display: block;
+    content: '';
+    height: 0.2rem;
+    width: 3rem;
+    margin: 1rem auto;
+    background: #F05F40;
+}
+
+.content p {
+    font-size: 0.85em;
+}
+
+.image-container .content {
+    position: absolute;
+}
+
+/* TEXT CONTAINER */
+
+.text-container {
+    background: #F05F40;
+    padding: 2rem 0;
+}
+
+.text-container h3:after {
+    background: white;
+}
+
+/* FOOTER */ 
+
+footer {
+    font-size: 0.85em;
+    padding: 1rem 0;
+}
+
+footer > span {
+    color: #F05F40;
+}

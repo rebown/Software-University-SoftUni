@@ -1,0 +1,59 @@
+@media screen and (max-width: 481px) {
+
+    body {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    header > .logo {
+        font-size: 3.5em;
+    }
+
+    header p {
+        font-size: 1.25em;
+    }
+
+    .wrapper > header h2:after {
+        width: 30%;
+    }
+
+    .wrapper > header.special {
+        padding: 2rem 1rem;
+    }
+
+    .wrapper.style1 .content {
+        color: grey;
+    }
+
+    .wrapper.style1 .content,
+    .wrapper.style2 {
+        padding: 1rem;
+    }
+
+    .gallery > *,
+    .spotlight > * {
+        width: 100%;
+    }
+
+    .spotlight .inner {
+        padding: 1.5rem;
+        text-align: center;
+        color: grey;
+    }
+
+    .spotlight > img {
+        position: relative;
+    }
+
+    .spotlight > img:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 3rem;
+        height: 3px;
+        background: #000;
+        z-index: 100;
+    }
+    
+
+}
