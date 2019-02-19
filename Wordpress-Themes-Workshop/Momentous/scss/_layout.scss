@@ -1,0 +1,12 @@
+
+
+/* MAIN > SECTION ARTICLES */
+
+main section:first-of-type {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main > .wrapper > section > article:first-of-type {
+	flex: 0 0 60%;
+}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Average+Sans|Fjalla+One');
+
+@import 'reset';
+@import 'layout';
+@import 'search';
+@import 'buttons';
+
+html {
+	font: 15px/1.5 'Fjalla One',Tahoma,Verdana,Arial;
+}
+
+body {
+	background: #CCCCCC;
+	margin: 0;
+	padding: 0;
+}
+
+/* COMMON */
+
+p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+header li,
+.navigation li {
+	list-style-type: none;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 85rem;
+	margin: 0 auto;
+}
+
+header a,
+.navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* HEADER */
+
+body > header {
+	background: #282828;
+	border-bottom: 3px outset rgb(245, 245, 245);
+}
+
+body > header {
+	padding: 2.5rem 0 2.5rem 0;
+}
+
+header .site-title a,
+header .site-title p {
+	color: white;
+}
+
+header .site-title > a {
+	font-size: 2.1rem;
+	letter-spacing: 0.05px;
+}
+
+/* NAVIGATION MAIN */
+
+header nav.main {
+	align-self: center;
+}
+
+header nav.main ul {
+	display: flex;
+}
+
+header nav.main ul li:not(:last-child) {
+	padding-right: 1.7rem;
+}
+
+header nav.main ul li a,
+header nav.main ul li i {
+	color: #BFB598;
+}
+
+header nav.main ul li i {
+	font-size: 1.4rem;
+}
+
+header nav.main ul li i:hover {
+	color: white;
+}
+
+header nav.main ul li a:hover {
+	text-decoration: underline;
+}
+
+/* SECOND NAVIGATION */
+
+.navigation {
+	background: white;
+}
+
+.navigation > .wrapper > ul {
+	display: flex;
+	align-items: center;
+}
+	
+.navigation .menu > li {
+	padding-left: 1.3rem;
+}
+
+.navigation ul.menu > li > a {
+	text-transform: uppercase;
+	color: #282828;
+	font-weight: 800;
+	padding: 0.9em;
+}
+
+.navigation ul li {
+	position: relative;
+	font-family: 'Average Sans',Tahoma,Verdana,Arial;
+}
+
+/* .navigation ul li:hover > ul {
+	opacity: 1;
+	z-index: 10;
+	visibility: visible;
+} */
+
+.navigation .menu > li > a {
+}
+
+.navigation .menu > li > a:hover {
+	color: #22a8d8;
+}
+
+.navigation ul ul {
+	position: absolute;
+	top: 100%; left: 0.70rem;
+	width: 14rem;
+	background: #22a8d8;
+	z-index: 10;
+
+	visibility: hidden; /* hides sub-menu */
+	/* opacity: 0;
+	z-index: -1;
+	transition: all 0.3s ease-in-out 0, visibility 0s linear 0.3s, z-index 0s linear 0.01s; */
+}
+
+.navigation ul ul li {
+	padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.navigation ul ul li a {
+	color: white;
+}
+
+.navigation ul ul li a:hover {
+	text-decoration: underline;
+}
+
+.navigation ul ul li:not(:last-child) {
+	border-bottom: 1px solid hsl(195, 100%, 72%);
+}
+
+.navigation .icons li:not(:last-child) {
+	padding-right: 1.5rem;
+}
+
+.navigation .icons li a i {
+	font-size: 1.25rem;
+	color: hsl(195, 100%, 72%);
+}
+
+.navigation .icons li a i:hover {
+	color: #282828;
+}
+
+/* MAIN CONTENT */
+
+main article {
+	background: white;
+	padding: 1.2rem;	
+}
+
+main article.main {
+	margin: 1rem 1rem 1rem 0;
+}
+
+main .secondary {
+	margin: 1rem 0 0 0;
+}
+
+article .media-content {
+	position: relative;
+	overflow: hidden;
+}
+
+article header {
+	font-family: 'Fjalla One',Tahoma,Verdana,Arial;
+}
+
+article p,
+form label,
+form {
+	font-family: 'Average Sans',Tahoma,Verdana,Arial;
+}
+
+article .media-content:before {
+	display: block;
+	content: '';
+	padding-top: 35%;
+}
+
+article .media-content img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+article .content * {
+	margin-bottom: 1rem;
+}
+
+article footer a {
+	color: black;
+	text-decoration: none;
+}
+
+article footer a:hover {
+	color: #22a8d8;
+}
+
+article .content .posted-on {
+	color: rgb(201, 200, 200);
+}
+
+article .content .posted-on a {
+	color: hsl(195, 100%, 72%);
+}
+
+article footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1.2em -1.2em -1.2em;
+	border-top: 1px solid #CCCCCC;
+}
+
+article footer .category i,
+article footer .comments i {
+	padding-right: 7px;
+}
+
+main .content-right {
+	display: flex;
+	flex: 0 0 37%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: fit-content;
+}
+
+main .content-right .secondary {
+	flex: 1 0 37%;
+}
+
+

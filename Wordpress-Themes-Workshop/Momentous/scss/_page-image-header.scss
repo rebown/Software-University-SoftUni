@@ -1,0 +1,79 @@
+
+main .wrapper > header {
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    /* flex:  0 100%; */
+}
+
+main section.left {
+    flex: 75%;  
+}
+
+main section.right {
+    flex: 25%;
+}
+
+main .content-left {
+    width: 100%;
+    margin: 2rem 0 0 0;
+}
+
+main .secondary{
+    margin: 2rem 0 0 2rem;
+}
+
+section.left .content-left > p {
+    padding: 0.5rem;
+}
+
+
+/* SECTION RIGHT */
+
+.wrap  header {
+    padding-bottom: 1rem;
+    margin: 0 -1.2em 1.2em -1.2em;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.wrap  header > h4 {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.content {
+
+}
+
+.content .categories {
+    display: flex;
+    font-family: 'Average Sans',Tahoma,Verdana,Arial;
+}
+
+.content .categories li {
+    list-style-type: none;
+    margin-right: 1px;
+}
+
+.content .dates {
+    padding-left: 1rem;
+}
+
+.content .dates li {
+    list-style-type: circle;
+    margin-bottom: 0.5rem;
+}
+
+.content .dates li a {
+    text-decoration: none;
+    color: #22a8d8;
+    font-size: 0.9em;
+    letter-spacing: 1;
+}
+
+.content .dates li a:hover {
+    text-decoration: underline;
+}

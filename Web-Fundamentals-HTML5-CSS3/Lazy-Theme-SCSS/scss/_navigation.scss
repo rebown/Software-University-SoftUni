@@ -1,0 +1,103 @@
+nav.main {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+
+    li {
+        list-style-type: none;
+        opacity: 0;
+        padding: 1rem;
+        animation: navitemin 1s 1 ease forwards;
+        transform: scale(0.1) translate(0, 3rem) rotate(720deg);
+    }
+
+    @for $i from 1 through 6 {
+        li:nth-child(#{$i}) {animation-delay: $i * 0.15s}
+    }
+
+    a {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 2em;
+        padding: 1.5rem 3rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: black;
+        box-shadow: 0 0 1rem 0 rgba(0, 0 ,0 ,0.1);
+        transition: color 1s ease;
+        // background: linear-gradient(to right, black 50%, white 50%);
+        // background-size: 201% 100%;
+        // background-position: right bottom;
+        // transition: all 5s ease-out;
+        &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0; left: 0; bottom: 0;
+            width: 0;
+            border-radius: 0.5rem;
+            background: #000;
+            transition: width 1s ease;
+            z-index: -1;
+        }
+
+        &:hover {
+            color: white;
+            // background-position: left bottom;
+            // color: white;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
+
+#main-nav-toggle {
+    display: none;
+}
+
+.site-header {
+
+    .toggle {
+        position: fixed;
+        font-size: 1.3em;
+        cursor: pointer;
+        z-index: 1010;
+        animation: navtogglein 0.5s 1 ease-in-out forwards;
+    }
+
+    .toggle.left {
+        top: 2rem; left: 1rem;
+    }
+    
+    .toggle.right {
+        top: 2rem; right: 1rem;
+    }
+} 
+
+
+#main-nav-toggle:checked + .site-header {
+    
+    nav.main  {
+        display: flex;
+    }
+
+    #toggle {
+        animation: jump 0.1s 1 ease-in-out forwards;
+
+        &:after {
+            content: '\f00d';
+        }
+    }
+}
+
+#main-nav-toggle + .site-header #toggle:after {
+    content: '\f0c9';
+}
+

@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="text-box">
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis eius obcaecati, animi, accusantium necessitatibus dolore explicabo voluptates aspernatur nihil magnam labore. Laborum dignissimos exercitationem soluta temporibus rerum repellendus labore earum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam illum dolorem quo, cumque ut omnis doloribus laborum consequuntur repudiandae, quisquam facere corrupti voluptates accusantium suscipit. Possimus, magnam amet? Suscipit, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos, rem aliquid aliquam tempora asperiores quibusdam quas vero magnam odit libero ratione repellendus accusantium voluptatum iste deleniti adipisci corporis optio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore amet nemo sed iste quis
+                eveniet esse et! Distinctio architecto quos accusantium incidunt quo voluptatibus ipsum nulla nemo
+                fugiat nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam id consequatur
+                vero non quos nesciunt magnam voluptatem cumque tenetur excepturi earum provident exercitationem iure
+                aperiam, architecto incidunt et voluptatum? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus eligendi sunt in voluptas ad numquam modi deserunt dolore esse excepturi delectus dolores
+                soluta autem molestiae, praesentium nesciunt impedit vel vitae. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Amet velit veniam praesentium explicabo dolore, earum nisi consectetur ratione iste
+                numquam inventore, in consequatur alias. Doloremque ipsam natus laborum! Deleniti, fugit.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="https://www.esi-africa.com/wp-content/uploads/2017/07/Green-bulb.jpg" alt="">
+        </div>
+
+        <div class="read-more">
+            <a class="more-link" href="#"><i class="fas fa-angle-down"></i></a>
+        </div>
+
+    </header>
+
+    <div class="wrapper">
+        <div class="box"><img src="https://www.esi-africa.com/wp-content/uploads/2017/07/Green-bulb.jpg" alt=""></div>
+        <div class="box"><img src="https://www.esi-africa.com/wp-content/uploads/2017/07/Green-bulb.jpg" alt=""></div>
+        <div class="box"><img src="https://www.esi-africa.com/wp-content/uploads/2017/07/Green-bulb.jpg" alt=""></div>        
+    </div>
+    <script>
+        $(document).ready(() => {
+            $(".more-link").click(function (e) {
+                $(this).parent().parent().toggleClass("show-more");
+                e.preventDefault();
+            });
+        })
+    </script>
+</body>
+
+</html>

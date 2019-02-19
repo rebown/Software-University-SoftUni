@@ -1,0 +1,44 @@
+body.login {
+
+    main {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background: #EEE;
+        max-width: 60rem;
+        margin: 2rem auto;
+        padding: 3rem 0;
+    }
+
+    fieldset legend,
+    fieldset {
+        border: 1px solid grey;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1)
+    }
+
+    form fieldset {
+        padding: 3vh 2vw;
+        animation: formin 0.5s ease-out;
+    }
+
+    fieldset legend {
+        padding: 0.5rem 1rem;
+    }
+
+    fieldset .field:not(:last-of-type) {
+        padding-bottom: 1rem;
+    }
+
+    fieldset .field label {
+        display: block;
+    }
+
+    fieldset .field input {
+        outline: none;
+        border: 1px solid grey;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+    }
+}
+

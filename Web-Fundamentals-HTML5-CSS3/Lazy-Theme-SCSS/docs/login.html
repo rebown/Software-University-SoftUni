@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css" text="text/css">
+</head>
+
+<body class="login">
+    <div class="site">
+        <input type="checkbox" id="main-nav-toggle">
+        <header class="site-header">
+            <div class="site-branding">
+                <p class="site-title">Jekyll Theme Lazy</p>
+                <p>It is minimal and lazy!</p>
+            </div>
+
+            <label class="fas toggle left" for="main-nav-toggle" id="toggle"></label>
+            <label class="fas toggle right" for="main-nav-toggle" id="toggle"></label>
+
+            <nav class="main">
+                <ul>
+                    <li>
+                        <a href="/">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-blogger-b"></i>
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/login">
+                            <i class="fas fa-key"></i>
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="POST">
+    <fieldset>
+        <legend>Log In</legend>
+
+        <p class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+        </p>
+
+        <p class="field">
+            <label for="password">Password</label>
+            <input type="text" id="password" />
+        </p>
+
+        <p class="field">
+            <input type="submit" value="Log In" />
+        </p>
+
+    </fieldset>
+</form>
+        </main>
+    </div>
+</body>
+
+</html>

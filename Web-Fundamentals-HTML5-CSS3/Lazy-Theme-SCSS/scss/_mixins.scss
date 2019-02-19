@@ -1,0 +1,5 @@
+@mixin mq($type, $width) {
+    @media screen and ($type: $width) {
+        @content;
+    }
+}
